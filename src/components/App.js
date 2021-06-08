@@ -1,29 +1,23 @@
 
-import React from "react";
+import React, { useState } from "react";
 import "../styles/main.scss";
 import Pokemon from "./Pokemon";
 import Data from "../Data/data.json";
-// import { useState } from "react";
+  // const [data, setdata] = useState(data) = useState(Data);
 
-
-const App = () => {
-
-  // const [Data, setData] = useState(Data);
-
-console.log(Data)
+  const App = () => {
   return (
     <>
       <header className="headerstyle">
-        <h1 className="pokestyle">Mi lista de pokemons</h1>
+        <h1 className="pokestyle">POKEMONS</h1>
       </header>
 
       <main className="mainstyle">
-        <p> Mis pokemons favoritos </p>
+        <p> Mi lista de pokemons:</p>
         <Pokemon datapoke={Data}/>
       </main>
-
       <footer className="footerstyle">
-        <small> Marina B.Sánchez.EValuación Intermedia</small>
+        <small> Marina B.Sánchez.Evaluación Intermedia</small>
       </footer>
     </>
   );

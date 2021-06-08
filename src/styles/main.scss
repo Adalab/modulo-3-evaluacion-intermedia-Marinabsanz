@@ -1,11 +1,25 @@
 body {
     margin: 0;
-    background-color: rgb(137, 199, 100);
+    background-color: rgb(208, 238, 190);
   }
   
 
 
   .pokestyle{
-    background-color: aquamarine;
+   color: rgb(30, 115, 235);
+   text-transform: uppercase;
+
   }
   
+
+  .pokemonsCss {
+    
+    background-color: azure;
+    border: solid 2px;
+    text-transform: capitalize;
+    font-size: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+  }
