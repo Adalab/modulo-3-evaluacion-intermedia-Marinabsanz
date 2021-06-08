@@ -1,32 +1,32 @@
 
+import React from "react";
+import "../styles/main.scss";
+import Pokemon from "./Pokemon";
+import Data from "../Data/data.json";
+// import { useState } from "react";
 
-// import logo from './logo.svg';
-import React from 'react';
-import Data from '../Data/data.json';
-import Pokelist from './PokeList';
-import '../styles/main.scss';
 
-const App= () => {
+const App = () => {
+
+  // const [Data, setData] = useState(Data);
+
+console.log(Data)
   return (
-    <div className="Div">
-      <header className="partial">
-        <h1 className= 'pokestyle'>Mi lista de pokemons</h1>
+    <>
+      <header className="headerstyle">
+        <h1 className="pokestyle">Mi lista de pokemons</h1>
       </header>
-     
-      <main className= "partial">
-      <p> Mis pokemons favoritos </p>
-       
-  
+
+      <main className="mainstyle">
+        <p> Mis pokemons favoritos </p>
+        <Pokemon datapoke={Data}/>
       </main>
 
-<footer className= "footer">   
-<small> Marina B.Sánchez.EValuación Intermedia</small>
-</footer>
-
-    </div>
-
-    
+      <footer className="footerstyle">
+        <small> Marina B.Sánchez.EValuación Intermedia</small>
+      </footer>
+    </>
   );
-}
+};
 
 export default App;
