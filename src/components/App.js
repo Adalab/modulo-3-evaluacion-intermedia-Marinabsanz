@@ -1,25 +1,26 @@
 
 
 // import logo from './logo.svg';
+import React from 'react';
+import Data from '../Data/data.json';
+import Pokelist from './PokeList';
 import '../styles/main.scss';
 
-function App() {
+const App= () => {
   return (
     <div className="Div">
       <header className="partial">
-        
-        <h1>Hola soy el header</h1>
+        <h1 className= 'pokestyle'>Mi lista de pokemons</h1>
       </header>
      
       <main className= "partial">
-      <p> hola soy el main
-        </p>
+      <p> Mis pokemons favoritos </p>
        
   
       </main>
 
-<footer className= "partial">   
- Hola soy el footer  
+<footer className= "footer">   
+<small> Marina B.Sánchez.EValuación Intermedia</small>
 </footer>
 
     </div>
