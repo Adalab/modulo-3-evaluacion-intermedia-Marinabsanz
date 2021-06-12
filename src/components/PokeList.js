@@ -3,16 +3,16 @@ import React from "react";
 
 class PokeList extends React.Component {
 
-    render() { console.table(this.props.datapoke)
+    render() { 
 const ePokemon = this.props.datapoke.map((pokeitem) => 
-{ return ( <li key ={pokeitem.id}  className ='eachPokemon'>  {pokeitem.name} Type: {pokeitem.types} <img src= {pokeitem.url}/>
+{ return ( <li key ={pokeitem.id}  className ='eachPokemon'>  {pokeitem.name} Type: {pokeitem.types} <img src= {pokeitem.url} alt= '{pokeitem.name}'/>
         </li>)  })
 
     return (
        
        <ul className= 'pokemonsCss'> 
            {ePokemon}
-           
+          
        </ul>
       
     )     
