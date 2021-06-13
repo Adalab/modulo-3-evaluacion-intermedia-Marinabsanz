@@ -1,1 +1,0 @@
-{"version":3,"sources":["webpack://src/styles/main.scss"],"names":[],"mappings":"AAAA,KACI,QAAA,CACA,wBAAA","file":"main.b1a8be55.chunk.css","sourcesContent":["body {\n    margin: 0;\n    background-color: rgb(137, 199, 100);\n  }\n  \n\n  "]}
