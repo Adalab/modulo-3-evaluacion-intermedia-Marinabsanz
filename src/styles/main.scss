@@ -1,8 +1,8 @@
 body {
     margin: 0;
-    background-color: rgb(208, 238, 190);
+    background-color: rgb(160, 166, 248);
   }
-  
+
 
 
   .pokestyle{
@@ -10,25 +10,27 @@ body {
    text-transform: uppercase;
 
   }
-
   .pokemonsCss {
     
-    background-color: azure;
+  
     border: solid 2px;
     text-transform: capitalize;
     font-size: 15px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     text-decoration: none;
+    background-color: brown;
+   
   
   }
 
 
   .eachPokemon{
-     width: 150px;
-     border:solid 1px;
      
-  
- 
+     border:solid 1px;
+     display: flex;
+    flex-direction: column;
+    width: fit-content;
+    margin: 15px;
 
   }

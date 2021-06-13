@@ -1,21 +1,17 @@
-import React from "react";
+import { render } from "@testing-library/react";
 
+import Pokemon from './Pokemon';
 
-class PokeList extends React.Component {
+const PokeList = (props) => 
+{
+    return ( 
+    
+    
+    <ul> 
+    < Pokemon datapoke = {props.datapoke}/>  
+    
+     </ul>);
+  }
+;
 
-    render() { 
-const ePokemon = this.props.datapoke.map((pokeitem) => 
-{ return ( <li key ={pokeitem.id}  className ='eachPokemon'>  {pokeitem.name} Type: {pokeitem.types} <img src= {pokeitem.url} alt= '{pokeitem.name}'/>
-        </li>)  })
-
-    return (
-       
-       <ul className= 'pokemonsCss'> 
-           {ePokemon}
-          
-       </ul>
-      
-    )     
-}
-    }
 export default PokeList;

@@ -1,20 +1,21 @@
-import { render } from "@testing-library/react";
+import React from "react";
 
-import PokeList from "./PokeList";
 
-const Pokemon = (props) => 
-{
-    return <PokeList datapoke = {props.datapoke}/>;
-  }
-;
+class Pokemon extends React.Component {
 
- ///Pendiente-- seleccionar favoritos y moverlos
-// const favPoke = () => {
-//   if (favorite=== ""){ 
-//     setFavorite ('favPoke')
-//   } else {
-//     return setFavorite ("")
-//   }
+    render() { 
+const ePokemon = this.props.datapoke.map((pokeitem) => 
+{ return ( <li key ={pokeitem.id}  className ='eachPokemon'>  {pokeitem.name} Type: {pokeitem.types} <img src= {pokeitem.url} alt= '{pokeitem.name}'/>
+        </li>)  })
 
-// }
+    return (
+       
+       <ul className= 'pokemonsCss'> 
+           {ePokemon}
+          
+       </ul>
+      
+    )     
+}
+    }
 export default Pokemon;

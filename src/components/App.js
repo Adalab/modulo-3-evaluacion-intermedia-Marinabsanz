@@ -1,9 +1,9 @@
 
 import React, { useState } from "react";
 import "../styles/main.scss";
-import Pokemon from "./Pokemon";
-import Data from "../Data/data.json";
-  // const [data, setdata] = useState(data) = useState(Data);
+import PokeList from './PokeList';
+import data from "../Data/data.json";
+
 
   const App = () => {
   return (
@@ -14,7 +14,7 @@ import Data from "../Data/data.json";
 
       <main className="mainstyle">
         <p> Mi lista de pokemons:</p>
-        <Pokemon datapoke={Data}/>
+        <PokeList datapoke={data}/>
       </main>
       <footer className="footerstyle">
         <small> Marina B.Sánchez.Evaluación Intermedia</small>
