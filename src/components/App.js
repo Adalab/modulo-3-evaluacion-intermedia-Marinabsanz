@@ -6,6 +6,7 @@ import data from "../Data/data.json";
 
 
   const App = () => {
+ 
   return (
     <>
       <header className="headerstyle">

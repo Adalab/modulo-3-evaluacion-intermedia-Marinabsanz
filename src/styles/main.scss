@@ -12,15 +12,12 @@ body {
   }
   .pokemonsCss {
     
-  
-    border: solid 2px;
     text-transform: capitalize;
     font-size: 15px;
     display: flex;
     flex-direction: column;
     text-decoration: none;
-    background-color: brown;
-   
+    
   
   }
 
@@ -29,8 +26,9 @@ body {
      
      border:solid 1px;
      display: flex;
-    flex-direction: column;
-    width: fit-content;
+    flex-direction: row;
+    width: 200px;
     margin: 15px;
+    background-color: chartreuse;
 
   }
